@@ -1,0 +1,52 @@
+.site-title {
+    margin-top: 150px;
+}
+
+#get-started {
+    margin: 100px 10px 30px 10px;
+    @include bp(baby-bear) {
+        margin: 50px;
+    }
+}
+
+
+#courses {
+    nav {
+        padding-top: 20px;
+        @include bp(mama-bear) {
+        margin: 20px;
+        }
+    }
+}
+
+#footer-bottom {
+    color: $gray-light;
+    background-color: #292929;
+    border-left: medium none;
+    border-top: 1px solid #383838;
+    box-shadow: 0 1px #222222 inset;
+    margin: 200px auto 0;
+    overflow: hidden;
+
+    ul, ol {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    }
+
+    li {
+    float: left;
+    padding:20px;
+        a {
+            color: $gray-light;
+        }
+    }
+    #copyright {
+    padding-top: 15px;
+    margin: 15px 0;
+    color: $gray-light;
+    }
+    #license {
+        margin-top: 20px;
+    }
+}

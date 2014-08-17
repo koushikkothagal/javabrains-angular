@@ -1,0 +1,56 @@
+{
+  "name": "Struts 2",
+  "about": "<p>Apache Struts 2 is an elegant and extensible framework for creating Java web applications. The framework is designed to let developers write web applications using the Model-View-Controller (MVC) pattern. </p><p>The courses on this page cover various concepts and features of the Struts 2 framework. </p>",
+  "courses": [{
+      "id": "01",
+      "code": "struts2_intro",
+      "name": "Beginning Struts 2",
+      "details": "<p>This course provides an introduction to the Struts 2 framework. You will understand the concepts of MVC, and learn to write a web application from scratch using Struts 2.</p>",
+      "tutorials": [
+
+    
+{"id": "1","name": "Introduction To MVC","href": "/tutorials/struts2_intro/Struts-2-Tutorial-01---Introduction-To-MVC.html"},
+
+{"id": "2","name": "Introduction to Struts 2","href": "/tutorials/struts2_intro/Struts-2-Tutorial-02---Introduction-to-Struts-2.html"},
+
+{"id": "3","name": "Setting Up","href": "/tutorials/struts2_intro/Struts-2-Tutorial-03---Setting-Up.html"},
+
+{"id": "4","name": "Writing a Struts 2 Application Part 1","href": "/tutorials/struts2_intro/Struts-2-Tutorial-04-Part-1---Writing-a-Struts-2-Application.html"},
+
+{"id": "5","name": "Writing a Struts 2 Application Part 2","href": "/tutorials/struts2_intro/Struts-2-Tutorial-04-Part-2---Writing-a-Struts-2-Application.html"},
+
+{"id": "6","name": "Understanding Namespaces","href": "/tutorials/struts2_intro/Struts-2-Tutorial-05---Understanding-Namespaces.html"},
+
+{"id": "7","name": "A Tag And A Business Service","href": "/tutorials/struts2_intro/Struts-2-Tutorial-06---A-Tag-And-A-Business-Service.html"},
+
+{"id": "8","name": "The ValueStack","href": "/tutorials/struts2_intro/Struts-2-Tutorial-07---The-ValueStack.html"},
+
+{"id": "9","name": "Accessing Input Parameters","href": "/tutorials/struts2_intro/Struts-2-Tutorial-08---Accessing-Input-Parameters.html"},
+
+{"id": "10","name": "Post requests to actions","href": "/tutorials/struts2_intro/Struts-2-Tutorial-09---Post-requests-to-actions.html"},
+
+{"id": "11","name": "Login Action and Best Practices","href": "/tutorials/struts2_intro/Struts-2-Tutorial-10---Login-Action-and-Best-Practices.html"},
+
+{"id": "12","name": "Login Action and Best Practices Part 2","href": "/tutorials/struts2_intro/Struts-2-Tutorial-11---Login-Action-and-Best-Practices-Part-2.html"},
+
+{"id": "13","name": "Action Wildcards","href": "/tutorials/struts2_intro/Struts-2-Tutorial-12---Action-Wildcards.html"},
+
+{"id": "14","name": "The ActionSupport Class","href": "/tutorials/struts2_intro/Struts-2-Tutorial-13---The-ActionSupport-Class.html"},
+
+{"id": "15","name": "Configuring methods in Action mappings","href": "/tutorials/struts2_intro/Struts-2-Tutorial-14---Configuring-methods-in-Action-mappings.html"},
+
+{"id": "16","name": "Using Model Objects","href": "/tutorials/struts2_intro/Struts-2-Tutorial-15---Using-Model-Objects.html"},
+
+{"id": "17","name": "Introducing Interceptors","href": "/tutorials/struts2_intro/Struts-2-Tutorial-16---Introducing-Interceptors.html"},
+
+{"id": "18","name": "Configuring Interceptors","href": "/tutorials/struts2_intro/Struts-2-Tutorial-17---Configuring-Interceptors.html"},
+
+{"id": "19","name": "Anatomy of an Interceptor","href": "/tutorials/struts2_intro/Anatomy-of-an-Interceptor.html"}
+
+        ]}
+
+    ]
+
+
+
+}

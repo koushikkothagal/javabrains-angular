@@ -1,0 +1,123 @@
+.hi-icon-wrap {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hi-icon {
+    display: inline-block;
+    font-size: 0px;
+    cursor: pointer;
+    margin: 15px 30px;
+    width: 60px;
+    height: 60px;
+    @include bp(mama-bear) {
+        width: 80px;
+        height: 80px;
+    }
+    @include bp(papa-bear) {
+        width: 90px;
+        height: 90px;
+    }
+
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: $text-color;
+}
+
+.hi-icon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.hi-icon:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-size: 30px;
+    line-height: 60px;
+    @include bp(mama-bear) {
+        font-size: 38px;
+        line-height: 80px;
+    }
+    @include bp(papa-bear) {
+        font-size: 48px;
+        line-height: 90px;
+    }
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hi-icon-effect-9 .hi-icon {
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+.hi-icon-effect-9 .hi-icon:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    box-shadow: 0 0 0 3px $text-color;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Effect 9a */
+.hi-icon-effect-9a .hi-icon:hover:after {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+    opacity: 0.5;
+}
+
+.hi-icon-effect-9a .hi-icon:hover {
+    box-shadow: 0 0 0 10px $text-color;
+    color: $text-color;
+}
+
+
+.hi-icon-facebook:before {
+    content: "\f09a";
+}
+
+
+.hi-icon-linkedin:before {
+    content: "\f0e1";
+}
+
+.hi-icon-youtube:before {
+    content: "\f167";
+}
+
+.hi-icon-twitter:before {
+    content: "\f099";
+}
+
+.hi-icon-gplus:before {
+    content: "\f0d5";
+}
+
+.hi-icon-github:before {
+    content: "\f09b";
+}
+
+.hi-icon-ggroups:before {
+    content: "\f0c0";
+}
+

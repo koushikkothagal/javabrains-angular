@@ -1,0 +1,20 @@
+#global-menu {
+    height: 100%;
+    .list-group-item {
+        padding: 5%;
+        cursor: pointer;
+        @include bp(mama-bear) {
+            padding: 3%;
+            font-size: 150%;
+        }
+        @include bp(papa-bear) {
+            padding: 3%;
+            font-size: 200%;
+        }
+    }
+    h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $brand-danger;
+    }
+}

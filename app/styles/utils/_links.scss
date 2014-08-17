@@ -1,0 +1,84 @@
+a {
+    text-decoration: none !important;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    transition: all 0.45s ease 0s;
+    color: $brand-danger;
+}
+
+
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: $brand-danger;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+
+
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+.link-effect-2 a {
+    padding: 10px 3px;
+    color: $gray-dark;
+    font-weight: 700;
+    text-shadow: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.link-effect-2 a::before,
+.link-effect-2 a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $gray-dark;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.link-effect-2 a::before {
+    top: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.link-effect-2 a::after {
+    bottom: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.link-effect-2 a:hover,
+.link-effect-2 a:focus {
+    color: $gray-dark;
+}
+
+.link-effect-2 a:hover::before,
+.link-effect-2 a:focus::before,
+.link-effect-2 a:hover::after,
+.link-effect-2 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}

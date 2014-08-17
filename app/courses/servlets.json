@@ -1,0 +1,28 @@
+{
+  "name": "Servlets and JSPs",
+  "about": "<p>Servlets and JSPs are Java technologies that allow server side programming in Java. Servlet containers facilitate running applications developed using the Servlet and JSP specifications. </p><p>The courses on this page cover various concepts related to Servlets and JSPs using Apache Tomcat as the servlet container. </p>",
+  "courses": [{
+      "id": "01",
+      "code": "servlets_intro",
+      "name": "Introduction to Servlets",
+      "details": "<p>This course provides an introduction to Java Servlet technology. You will learn how to develop Java web applications using Servlets. you will also understand the life cycle of Servlets, how they work and how to configure them.</p>",
+      "tutorials": [
+
+{"id": "1","name": "Setting up","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-01---Setting-up.html"},{"id": "2","name": "First Servlet Part 1","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-02---First-Servlet-Part-1.html"},{"id": "3","name": "First Servlet Part 2","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-02---First-Servlet-Part-2.html"},{"id": "4","name": "Understanding the Servlet","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-03---Understanding-the-Servlet.html"},{"id": "5","name": "Servlet XML Configuration","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-04---Servlet-XML-Configuration.html"},{"id": "6","name": "The POST Method and Passing Parameters","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-05---The-POST-Method-and-Passing-Parameters.html"},{"id": "7","name": "Passing More Parameters","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-06---Passing-More-Parameters.html"},{"id": "8","name": "Understanding GET and POST","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-07---Understanding-GET-and-POST.html"},{"id": "9","name": "Request, Session and Context","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-08---Request,-Session-and-Context.html"},{"id": "10","name": "Understanding init, service and ServletConfig","href": "/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-09---Understanding-init,-service-and-ServletConfig.html"}
+        ]},
+    {
+      "id": "02",
+      "code": "jsps_intro",
+      "name": "Java Server Pages",
+      "details": "<p>This course covers writing and implementing Java Server Pages (JSPs) on a servlet container. You will understand what JSPs are, how they are related to servlets and how to write view logic using them.</p>",
+      "tutorials": [
+
+{"id": "1","name": "Hello JSP","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-10---Hello-JSP.html"},{"id": "2","name": "Understanding the JSP","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-11---Understanding-the-JSP.html"},{"id": "3","name": "JSP Page Directives","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-12---JSP-Page-Directives.html"},{"id": "4","name": "Scopes in JSP and the PageContext object","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-13---Scopes-in-JSP-and-the-PageContext-object.html"},{"id": "5","name": "Using jspInit and InitParams","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-14---Using-jspInit-and-InitParams.html"},{"id": "6","name": "Understanding the MVC Pattern","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-15---Understanding-the-MVC-Pattern.html"},{"id": "7","name": "Writing an MVC Application Part 1","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-16-Part-1--Writing-an-MVC-Application.html"},{"id": "8","name": "Writing an MVC Application Part 2","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-16-Part-2--Writing-an-MVC-Application.html"},{"id": "9","name": "Using Model object in the MVC Application","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-16-Part-3--Using-Model-object-in-the-MVC-Application.html"},{"id": "10","name": "Using RequestDispatcher in the MVC Application","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-16-Part-4--Using-RequestDispatcher-in-the-MVC-Application.html"},{"id": "11","name": "Introduction to JSTL and the useBean tag","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-17---Introduction-to-JSTL-and-the-useBean-tag.html"},{"id": "12","name": "Request Parameters with the setProperty tag","href": "/tutorials/jsps_intro/JSPs-and-Servlets-Tutorial-18---Request-Parameters-with-the-setProperty-tag.html"}
+        ]
+
+    }
+    ]
+
+
+
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Maven",
+  "about": "<p>Apache Maven is a software project management and dependency management tool. </p><p>The courses on this page cover concepts and usage scenarios for Apache Maven. </p>",
+  "courses": [{
+      "id": "01",
+      "code": "maven_intro",
+      "name": "Introduction to Maven",
+      "details": "<p>This course is an introduction to the basic features of Apache Maven.  You will learn what Maven is and how it helps managing dependencies in your Java project. You will understand POM configuration, build phases and use plugins.</p>",
+      "tutorials": [
+
+    
+{"id": "1","name": "Introduction and Setting up Part 1","href": "/tutorials/maven_intro/Maven-Tutorial-01-Part-1--Introduction-and-Setting-up.html"},
+
+{"id": "2","name": "Introduction and Setting up Part 2","href": "/tutorials/maven_intro/Maven-Tutorial-01-Part-2--Introduction-and-Setting-up.html"},
+
+{"id": "3","name": "Understanding Archetypes and pom.xml","href": "/tutorials/maven_intro/Maven-Tutorial-02--Understanding-Archetypes-and-pom.xml.html"},
+
+{"id": "4","name": "Maven Build Phases","href": "/tutorials/maven_intro/Maven-Tutorial-03--Maven-Build-Phases.html"},
+
+{"id": "5","name": "Adding a Dependency","href": "/tutorials/maven_intro/Maven-Tutorial-04---Adding-a-Dependency.html"},
+
+{"id": "6","name": "A Web Application Using Maven","href": "/tutorials/maven_intro/Maven-Tutorial-05---A-Web-Application-Using-Maven.html"},
+
+{"id": "7","name": "Introduction to Plugins with the Maven Compiler Plugin","href": "/tutorials/maven_intro/Maven-Tutorial-06---Introduction-to-Plugins-with-the-Maven-Compiler-Plugin.html"},
+
+{"id": "8","name": "Using the Jetty Plugin","href": "/tutorials/maven_intro/Maven-Tutorial-07---Using-the-Jetty-Plugin.html"},
+
+{"id": "9","name": "Eclipse Plugin for Maven and Maven Plugin for Eclipse","href": "/tutorials/maven_intro/Maven-Tutorial-08---Eclipse-Plugin-for-Maven-and-Maven-Plugin-for-Eclipse.html"}
+
+        ]}
+    ]
+}

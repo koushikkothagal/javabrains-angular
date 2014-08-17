@@ -1,0 +1,129 @@
+{
+  "name": "Spring Framework",
+  "about": "<p>Spring is one of the most popular application development frameworks for writing enterprise Java applications. Though not associated with the official Java EE standard, the framework is so popular that it is often referred to as the de-facto standard for developing Enterprise Java applications.</p><p>The courses on this page cover various features and technologies of the Spring framework.</p>",
+  "courses": [{
+      "id": "01",
+      "code": "spring-core",
+      "name": "Learning Spring Core",
+      "details": "<p>This course provides an introduction to the Spring framework. You will understand the concepts of dependency injection, understand how the core Spring framework works and how to write an application using it.</p>",
+      "tutorials": [
+
+    
+{"id": "1","name": "Understanding Dependency Injection","href": "/tutorials/spring_core/Understanding-Dependency-Injection.html"},
+
+{"id": "2","name": "Setting Up","href": "/tutorials/spring_core/Setting-Up.html"},
+
+{"id": "3","name": "Understanding Spring Bean Factory","href": "/tutorials/spring_core/Understanding-Spring-Bean-Factory.html"},
+
+{"id": "4","name": "Writing Code Using the Bean Factory","href": "/tutorials/spring_core/Writing-Code-Using-the-Bean-Factory.html"},
+
+{"id": "5","name": "ApplicationContext and Property Initialization","href": "/tutorials/spring_core/ApplicationContext-and-Property-Initialization.html"},
+
+{"id": "6","name": "Using Constructor Injection","href": "/tutorials/spring_core/Using-Constructor-Injection.html"},
+
+{"id": "7","name": "Injecting Objects","href": "/tutorials/spring_core/Injecting-Objects.html"},
+
+{"id": "8","name": "Inner Beans, Aliases and idref","href": "/tutorials/spring_core/Inner-Beans,-Aliases-and-idref.html"},
+
+{"id": "9","name": "Initializing Collections","href": "/tutorials/spring_core/Initializing-Collections.html"},
+
+{"id": "10","name": "Bean Autowiring","href": "/tutorials/spring_core/Bean-Autowiring.html"},
+
+{"id": "11","name": "Understanding Bean Scopes","href": "/tutorials/spring_core/Understanding-Bean-Scopes.html"},
+
+{"id": "12","name": "Using ApplicationContextAware","href": "/tutorials/spring_core/Using-ApplicationContextAware.html"},
+
+{"id": "13","name": "Bean Definition Inheritance","href": "/tutorials/spring_core/Bean-Definition-Inheritance.html"},
+
+{"id": "14","name": "Lifecycle Callbacks","href": "/tutorials/spring_core/Lifecycle-Callbacks.html"},
+
+{"id": "15","name": "Writing a BeanPostProcessor","href": "/tutorials/spring_core/Writing-a-BeanPostProcessor.html"},
+
+{"id": "16","name": "Writing a BeanFactoryPostProcessor","href": "/tutorials/spring_core/Writing-a-BeanFactoryPostProcessor.html"},
+
+{"id": "17","name": "Coding To Interfaces","href": "/tutorials/spring_core/Spring-Tutorial-17---Coding-To-Interfaces.html"},
+
+{"id": "18","name": "Introduction to Annotations and the Required Annotation","href": "/tutorials/spring_core/Spring-Tutorial-18---Introduction-to-Annotations-and-the-Required-Annota....html"},
+
+{"id": "19","name": "The Autowired Annotation","href": "/tutorials/spring_core/Spring-Tutorial-19---The-Autowired-Annotation.html"},
+
+{"id": "20","name": "Some JSR-250 Annotations","href": "/tutorials/spring_core/Spring-Tutorial-20---Some-JSR-250-Annotations.html"},
+
+{"id": "21","name": "Component and Stereotype Annotations","href": "/tutorials/spring_core/Spring-Tutorial-21---Component-and-Stereotype-Annotations.html"},
+
+{"id": "22","name": "Using MessageSource To Get Text From Property Files","href": "/tutorials/spring_core/Spring-Tutorial-22---Using-MessageSource-To-Get-Text-From-Property-Files.html"},
+
+{"id": "23","name": "Event Handling in Spring","href": "/tutorials/spring_core/Spring-Tutorial-23---Event-Handling-in-Spring.html"}
+
+        ]},
+    {
+      "id": "02",
+      "code": "spring-aop",
+      "name": "Understanding Spring AOP",
+      "details": "<p>This tutorial introduces the concepts of Aspect Oriented Programming and Spring AOP. You will learn to write Aspects in Java using Spring AOP and also understand the terminologies used in AOP along the way.</p>",
+      "tutorials": [
+
+    
+{"id": "1","name": "Introduction to AOP","href": "/tutorials/spring_aop/Spring-Tutorial-24---Introduction-to-AOP.html"},
+
+{"id": "2","name": "Setting Up AOP Dependencies","href": "/tutorials/spring_aop/Spring-Tutorial-25---Setting-Up-AOP-Dependencies.html"},
+
+{"id": "3","name": "Writing Our First Aspect Part 1","href": "/tutorials/spring_aop/Spring-Tutorial-26---Writing-Our-First-Aspect-Part-1.html"},
+
+{"id": "4","name": "Writing Our First Aspect Part 2","href": "/tutorials/spring_aop/Spring-Tutorial-27---Writing-Our-First-Aspect-Part-2.html"},
+
+{"id": "5","name": "Pointcuts and Wildcard Expressions","href": "/tutorials/spring_aop/Spring-Tutorial-28---Pointcuts-and-Wildcard-Expressions.html"},
+
+{"id": "6","name": "A Few More Pointcut Expressions","href": "/tutorials/spring_aop/Spring-Tutorial-29---A-Few-More-Pointcut-Expressions.html"},
+
+{"id": "7","name": "JoinPoints and Advice Arguments","href": "/tutorials/spring_aop/Spring-Tutorial-30---JoinPoints-and-Advice-Arguments.html"},
+
+{"id": "8","name": "After Advice Types","href": "/tutorials/spring_aop/Spring-Tutorial-31---After-Advice-Types.html"},
+
+{"id": "9","name": "Around Advice Type","href": "/tutorials/spring_aop/Spring-Tutorial-32---Around-Advice-Type.html"},
+
+{"id": "10","name": "Naming Conventions and Custom Advice Annotations","href": "/tutorials/spring_aop/Spring-Tutorial-33---Naming-Conventions-and-Custom-Advice-Annotations.html"},
+
+{"id": "11","name": "AOP XML configuration","href": "/tutorials/spring_aop/Spring-Tutorial-34---AOP-XML-configuration.html"},
+
+{"id": "12","name": "Understanding AOP Proxies","href": "/tutorials/spring_aop/Spring-Tutorial-35---Understanding-AOP-Proxies.html"}
+
+        ]
+
+    },
+    {
+      "id": "03",
+      "code": "spring-data",
+      "name": "Data access in Spring",
+      "details": "<p>Almost every application needs to access data. In this course, you will learn about Spring support for data access from relational databases.</p>",
+      "tutorials": [
+
+    
+{"id": "1","name": "Introduction to Spring Data and Setting Up","href": "/tutorials/spring_data/Spring-Tutorial-36---Introduction-to-Spring-Data-and-Setting-Up.html"},
+
+{"id": "2","name": "Using JDBC without Spring","href": "/tutorials/spring_data/Spring-Tutorial-37---Using-JDBC-without-Spring.html"},
+
+{"id": "3","name": "Adding Spring and DataSource Configuration","href": "/tutorials/spring_data/Spring-Tutorial-38---Adding-Spring-and-DataSource-Configuration.html"},
+
+{"id": "4","name": "Using JdbcTemplate","href": "/tutorials/spring_data/Spring-Tutorial-39---Using-JdbcTemplate.html"},
+
+{"id": "5","name": "Returning Other Datatypes from JdbcTemplate","href": "/tutorials/spring_data/Spring-Tutorial-40---Returning-Other-Datatypes-from-JdbcTemplate.html"},
+
+{"id": "6","name": "Implementing RowMapper","href": "/tutorials/spring_data/Spring-Tutorial-41---Implementing-RowMapper.html"},
+
+{"id": "7","name": "Performing Write Operations with JdbcTemplate","href": "/tutorials/spring_data/Spring-Tutorial-42---Performing-Write-Operations-with-JdbcTemplate.html"},
+
+{"id": "8","name": "Named Parameter JDBC Template","href": "/tutorials/spring_data/Spring-Tutorial-43---Named-Parameter-JDBC-Template.html"},
+
+{"id": "9","name": "DAO Support Classes","href": "/tutorials/spring_data/Spring-Tutorial-44---DAO-Support-Classes.html"},
+
+{"id": "10","name": "Using Hibernate with Spring","href": "/tutorials/spring_data/Spring-Tutorial-45---Using-Hibernate-with-Spring.html"}
+
+        ]
+
+    }
+    ]
+
+
+
+}

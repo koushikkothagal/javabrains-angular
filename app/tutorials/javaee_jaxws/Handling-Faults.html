@@ -1,0 +1,209 @@
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+
+
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+        
+            
+        
+        
+            
+                
+            
+
+
+            
+    	
+    	
+            
+            
+                
+            
+            
+    	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+<header class="text-center">
+    <div>
+        <span id="topic-link-span" class="dd"><a id="topic-link" href="/javaee.html#javaee_jaxws">SOAP Web Services with JAX-WS</a></span>
+    </div>
+    <h1 class="video-number">16</h1>
+
+    <h1 id="tut-title"  class="no-margin">Handling Faults</h1>
+
+</header>
+<div class="post-body">
+    <p>Web services return &quot;Fault&quot; messages to denote error scenarios. In this tutorial, we&#39;ll throw an exception, generate and examine a fault message. </p>
+
+<p>Source code: <a href="https://github.com/koushikkothagal/Testmart/archive/307adc8daa0a5163c8358f418dfa489af9eb0dc2.zip"> <b>Download</b> </a></p>
+
+<p>We will now look at a third type of message that a web service operation can return. When there is an exception in the code execution, a web service should ideally return a fault message. In JAX-WS, this can be done by having the method declare a checked exception. </p>
+
+<p>Here&#39;s what I do to have our ShopInfoService web service return a fault message. </p>
+
+<ol>
+<li>Create a custom checked exception called InvalidInputException</li>
+<li>Have the method throw this checked exception, with the necessary declaration.</li>
+</ol>
+
+<p>When the framework sees that a web method throws an exception, it prepares the fault message accordingly.</p>
+
+<p>The exception class that I create is pretty much a standard checked exception, except for a couple of web service specific elements.</p>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">InvalidInputException</span> <span class="kd">extends</span> <span class="n">Exception</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">errorDetails</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">InvalidInputException</span><span class="o">(</span><span class="n">String</span> <span class="n">reason</span><span class="o">,</span> <span class="n">String</span> <span class="n">errorDetails</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="n">reason</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">errorDetails</span> <span class="o">=</span> <span class="n">errorDetails</span><span class="o">;</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getFaultInfo</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">errorDetails</span><span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></div>
+<p>Notice the <code>private String errorDetails;</code> that I use to store a detailed error message with the Exception. This allows whoever throws the exception to give details about the error. This information will be returned in the fault message.</p>
+
+<p>The way the framework gets this message is by calling the method <code>public String getFaultInfo()</code>. If your exception has this method, the framework uses it to prepare the SOAP response containing the message.</p>
+
+</div>
+
+<div id="prevnext">
+<nav class="nav-growpop">
+    
+        <a class="prev" href="/tutorials/javaee_jaxws/Using-JAXB-Annotations---Part-2.html">
+            <span class="icon-wrap fa fa-arrow-left"></span>
+            <div>
+                <span>Previous</span>
+                <p>15</p>
+                <h3>Using JAXB Annotations Part 2</h3>
+
+
+            </div>
+        </a>
+    
+     
+        <a class="next" href="/tutorials/javaee_jaxws/Using-SoapUI.html">
+            <span class="icon-wrap fa fa-arrow-right"></span>
+            <div>
+                <span>Next</span>
+                <p>17</p>
+                <h3>Using SoapUI</h3>
+
+
+            </div>
+        </a>
+    
+    </nav>
+</div>

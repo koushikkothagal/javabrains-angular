@@ -1,0 +1,236 @@
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+
+
+
+    
+  	
+    
+        
+                
+        
+        
+            
+                
+            
+
+
+            
+    	
+    	
+            
+        
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+<header class="text-center">
+    <div>
+        <span id="topic-link-span" class="dd"><a id="topic-link" href="/javaee.html#javaee_jaxws">SOAP Web Services with JAX-WS</a></span>
+    </div>
+    <h1 class="video-number">01</h1>
+
+    <h1 id="tut-title"  class="no-margin">Introduction to Web Services</h1>
+
+</header>
+<div class="post-body">
+    <p>Welcome to this tutorial course on SOAP web services in Java. We&#39;ll start with an introduction to web services. We&#39;ll understand what they are and how they are useful.</p>
+
+<!--
+<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/mKjvKPlb1rA?rel=0"></iframe></div>
+-->
+
+<style>
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<div class="outer-container">
+<div class="video-container shadow">
+         <iframe src="http://www.youtube.com/embed/mKjvKPlb1rA" frameborder="0" width="560" height="315"></iframe>
+</div>
+
+<p></div>    </p>
+
+<h3>Introduction</h3>
+
+<p>Welcome to this course on SOAP web services in Java.</p>
+
+<p>There are primarily two types of web services we can write in general. They are:</p>
+
+<ol>
+<li><p>SOAP web services</p></li>
+<li><p>REST web services</p></li>
+</ol>
+
+<p>In this tutorial series, I will be focusing on SOAP web services, and there will be another series for REST.</p>
+
+<p>In the Java world, there are two different specifications for these two types of web services:</p>
+
+<ol>
+<li><p>JAX-WS specification for SOAP web services</p></li>
+<li><p>JAX-RS specification for REST web services</p></li>
+</ol>
+
+<p>Since this course is about SOAP web services, we&#39;ll be learning JAX-WS.</p>
+
+<h3>What is a web service?</h3>
+
+<p>A very simple definition is &quot;a service made available over the web&quot;. But this is a bit too simplified for a definition. Because, then isn&#39;t everything online a web service? We use e-commerce websites to shop. We use social media websites to connect with people. They are, after all, services that are provided to us over the web. Can they be called web services?</p>
+
+<p>The difference between a standard website and a web service is this: a website is meant for human consumption, while a web service is meant for machine (or code) consumption.</p>
+
+<p>Let&#39;s take an example of an e-commerce application. You have written a business service called GetProducts to get a list of products from the database. You can write an MVC layer to call this service and display the list of products to a user as a web page. The user can access a URL and see this page in their browsers. The page will probably have some formatting to make the list look pretty and stylish. Generally appealing to the human eye.</p>
+
+<p>But, now let&#39;s say you have a different application that needs to use your business service to display your list of products from your database. How can they access this list? Can the application access the same URL you used to display the products on your browser? It could, but then the code would need to parse through the HTML, ignoring all the styling and alignment information, and then get to the product information. All the formatting and styling that was essential to a human readable web page become an unnecessary burden (that needs to be parsed and ignored) to a piece of code that needs to consume this same information.</p>
+
+<p>The common alternative of sharing code or binaries as a jar is also not possible in this case. You cannot package your GetProducts business service and include it in the application that needs it. Because, the application would probably be running in a different infrastructure on a separate network that has no access to the database that your business service connects to. What would be ideal is if the consuming application could directly call the business service deployed on your server.</p>
+
+<p>That is essentially what a web service does. It allows two different pieces of code running on two different servers to be able to talk to each other and call each other&#39;s methods.</p>
+
+<h3>Interoperability</h3>
+
+<p>The other advantage of using web services is that it is standard technology. It&#39;s not really specific to Java. The JAX-WS specification I mentioned above is the Java way of achieving the web service standard. But the web service technology itself is language neutral. Which means that when you call a web service from an application, you don&#39;t care what technology the web service is implemented in. You could be writing a Java program that calls a web service written in .NET. Doesn&#39;t matter. It is language independent. And it all works at runtime.</p>
+
+<p>Imagine that! A Java code can call a method written in .NET and deployed on a server somewhere else in the world. And still be able to exchange data and execute each other&#39;s code. This ability is called interoperability, which is one of the most important buzz-words and ability of the web service technology and the web service standard itself.</p>
+
+<p>In the next tutorial, we&#39;ll try to understand some of the terminologies associated with web services.</p>
+
+</div>
+
+<div id="prevnext">
+<nav class="nav-growpop">
+    
+     
+        <a class="next" href="/tutorials/javaee_jaxws/Web-Service-Jargon.html">
+            <span class="icon-wrap fa fa-arrow-right"></span>
+            <div>
+                <span>Next</span>
+                <p> 02  </p>
+                <h3>Web Service Jargon</h3>
+
+
+            </div>
+        </a>
+    
+    </nav>
+</div>

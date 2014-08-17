@@ -1,0 +1,233 @@
+
+
+    
+
+    
+
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+        
+                
+        
+        
+            
+                
+            
+
+
+            
+    	
+    	
+            
+            
+                
+            
+            
+    	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+    
+  	
+    
+
+<header class="text-center">
+    <div>
+        <span id="topic-link-span" class="dd"><a id="topic-link" href="/spring.html#spring_core">Learning Spring Core</a></span>
+    </div>
+    <h1 class="video-number">03</h1>
+
+    <h1 id="tut-title"  class="no-margin">Understanding Spring Bean Factory</h1>
+
+</header>
+<div class="post-body">
+    <p>In this tutorial, we&#39;ll discuss the role of Spring as a bean container. We&#39;ll also have a quick discussion on the Factory pattern, and I&#39;ll introduce you to the Spring Bean Factory object.</p>
+
+<!--
+<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/xlWwMSu5I70?rel=0"></iframe></div>
+-->
+
+<style>
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<div class="outer-container">
+<div class="video-container shadow">
+         <iframe src="http://www.youtube.com/embed/xlWwMSu5I70" frameborder="0" width="560" height="315"></iframe>
+</div>
+
+<p></div>    </p>
+
+<h3>Summary</h3>
+
+<p>The concept of dependency injection that Spring is so popular for is possible because Spring behaves as a container of beans.</p>
+
+<p>You can have instances of your objects in the Spring container, which means that Spring handles the instantiation and the life cycle of the beans.</p>
+
+<p>Spring creates all instances of the objects you need. It also has references to all the objects. This is different from creating an instance yourself by using <code>new()</code>. This is what&#39;s called a <em>Factory pattern</em>.</p>
+
+<p>In the factory pattern, there exists an object that behaves as the <em>object factory</em>. Basically, whenever you need an instance of any object, you don&#39;t create the instance yourself. Instead, you call a method of this <em>factory</em> instance, and that method returns the instance you need. This <em>factory</em> might read from a configuration file, which acts as a blueprint, containing guidelines on how to create the object.</p>
+
+<p>Spring has objects of type <code>BeanFactory</code> which behave like an object factory. You specify object blueprints in a configuration file, an XML file, and supply it to the <code>BeanFactory</code>. Then when you need an instance of any object, you ask the <code>BeanFactory</code> for it. It then refers the XML file and constructs the bean as specified. This bean, which is now a <em>Spring bean</em> since it has been created by the Spring container, is then returned to whoever asked for it.</p>
+
+<p>In the next tutorial, we&#39;ll write code that implements this flow.</p>
+
+</div>
+
+<div id="prevnext">
+<nav class="nav-growpop">
+    
+        <a class="prev" href="/tutorials/spring_core/Setting-Up.html">
+            <span class="icon-wrap fa fa-arrow-left"></span>
+            <div>
+                <span>Previous</span>
+                <p> 02  </p>
+                <h3>Setting Up</h3>
+
+
+            </div>
+        </a>
+    
+     
+        <a class="next" href="/tutorials/spring_core/Writing-Code-Using-the-Bean-Factory.html">
+            <span class="icon-wrap fa fa-arrow-right"></span>
+            <div>
+                <span>Next</span>
+                <p> 04  </p>
+                <h3>Writing Code Using the Bean Factory</h3>
+
+
+            </div>
+        </a>
+    
+    </nav>
+</div>

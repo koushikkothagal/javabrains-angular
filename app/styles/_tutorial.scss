@@ -1,0 +1,121 @@
+.tut-content {
+    margin-top: -40px;
+}
+
+.disqusbut {
+    background-color: #3A4145;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1em;
+    font-family: "Lato";
+    outline: none;
+    padding: 1em;
+    width: 100%;
+    max-width: 30em;
+    margin: 2em auto 2em;
+}
+
+
+#topic-link {
+    background: none repeat scroll 0 0 #e4e7ec;
+    color: #90939a;
+    display: inline-block;
+    font-size: 10px;
+    @include bp(mama-bear) {
+        font-size: 12px;
+    }
+    font-weight: 600;
+    margin: 0 auto 1.6em;
+    margin-top: 25px;
+    padding: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+h1.video-number {
+    color: rgba(192, 57, 43, 1);
+    font-size: 19px;
+    @include bp(mama-bear) {
+        font-size: 36px;
+    }
+    @include bp(papa-bear) {
+        font-size: 43px;
+    }
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1em;
+    margin: auto;
+}
+
+h1#tut-title {
+    font-size: 29px;
+    margin-top: 14px;
+    @include bp(mama-bear) {
+        font-size: 55px;
+    }
+    @include bp(papa-bear) {
+        font-size: 62px;
+    }
+    font-weight: 700;
+}
+
+
+h1.video-number, p.intro {
+    width: 84%;
+}
+
+
+.post-body {
+    .outer-container {
+        max-width: 950px;
+        margin: auto;
+    }
+    h1, h2, h3, h4 {
+        text-align: center;
+        font-weight: 700;
+    }
+    p, blockquote, ol {
+        color: #444;
+        font-family: 'PT Serif';
+        font-size: 16px;
+        line-height: 20px;
+        @include bp(mama-bear) {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        margin: 1.5em auto;
+        max-width: 40em;
+    }
+    pre {
+        width: 100%;
+        @include bp(mama-bear) {
+            width: 950px;
+        }
+        margin:0 auto 20px;
+    }
+    > p:first-of-type {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    color: rgba(51, 51, 51, 0.8);
+    font-size: 16px;
+    padding: 5px 0;
+    @include bp(mama-bear) {
+        font-size: 20px;
+        padding: 14px 0;
+    }
+    @include bp(papa-bear) {
+        font-size: 22px;
+        padding: 22px 0;
+    }
+    font-style: italic;
+    font-weight: 400;
+    line-height: 131.25%;
+    margin: auto auto 1em;
+    text-align: center;
+}
+
+
+
+}
+
