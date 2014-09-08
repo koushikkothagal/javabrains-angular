@@ -11,7 +11,8 @@ module.exports = function (grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
-
+  grunt.loadNpmTasks('grunt-contrib-copy');
+    
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
@@ -141,6 +142,14 @@ module.exports = function (grunt) {
             '!<%= yeoman.dist %>/.git*'
           ]
         }]
+      },
+      jekyll : {
+          files: [{
+              src: [ '../jekyll/scripts',
+                     '../jekyll/styles',
+                     '../jekyll/views'
+              ]
+          }]
       },
       server: '.tmp'
     },
@@ -364,6 +373,22 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      jekyll: {
+          files: [
+            // includes files within path
+            {expand: true, cwd: 'dist/', src: ['views/**'], dest: '../javabrains-site'},
+            {expand: true, cwd: 'dist/', src: ['styles/**'], dest: '../javabrains-site'},  
+            {expand: true, cwd: 'dist/', src: ['scripts/**'], dest: '../javabrains-site'},    
+            {expand: true, cwd: 'dist/', src: ['index.html'], dest: '../javabrains-site/_layouts/', 
+             rename: function(dest, src) {
+                 grunt.log.writeln('copying...');
+                 //grunt.file.copy('dist/index.html', dest + 'blank.html');
+                 return dest + 'blank.html';
+             }
+            
+            }      
+          ]
       }
     },
 
@@ -381,6 +406,31 @@ module.exports = function (grunt) {
         'svgmin'
       ]
     },
+    // Copy to Jekyll settings
+    jekyll : {
+        options: {
+            jekyllDirectory: '../javabrains-site/',
+            copyDirections: [
+                { 
+                    src: 'dist/index.html',
+                    dest: 'index.html'
+                },
+                { 
+                    src: 'dist/404.html',
+                    dest: '404.html'
+                },
+            /*    { 
+                    src: 'dist/index.html',
+                    dest: '_layouts/blank.html'
+                },
+*/                { 
+                    src: 'dist/views/',
+                    dest: '/views/'
+                }
+            ]
+                                
+        }
+    },  
 
     // Test settings
     karma: {
@@ -442,4 +492,36 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+/*var recursiveCopy = function(source, destination) {
+  if(grunt.file.isDir(source)) {
+        grunt.file.recurse(source, function(file){
+            recursiveCopy(file, destination);
+        });
+  } else {
+    grunt.log.writeln('Copying ' + source + ' to ' + destination);
+    grunt.file.copy(source, destination);
+  }
+}
+   
+grunt.registerTask('jekyll', function (name) {
+    grunt.config.requires('jekyll.options.jekyllDirectory');
+    var jekyllDir = grunt.config.get('jekyll.options.jekyllDirectory'); 
+    var copyDirections = grunt.config.get('jekyll.options.copyDirections');
+    copyDirections.forEach(function(copyDirection) {
+        var src = copyDirection.src;
+        var dest = jekyllDir + copyDirection.dest;
+        recursiveCopy(src, dest);
+    });
+    //var file = grunt.config.get('jekyll.options.jekyllDirectory') + '/' + grunt.config.get('jekyll.options.copyDirections[0].src');
+    //grunt.log.writeln(file);
+});
+    */
+    
+  grunt.registerTask('jekyll', [
+    'build',  
+    'clean:jekyll',
+    'copy:jekyll'
+  ]);    
+    
 };

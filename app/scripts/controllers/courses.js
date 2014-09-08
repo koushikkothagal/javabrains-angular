@@ -8,6 +8,6 @@
  * Controller of the jb3App
  */
 angular.module('jb3App')
-  .controller('CoursesCtrl', function ($scope) {
-
+  .controller('CoursesCtrl', function ($scope, $analytics) {
+      
   });

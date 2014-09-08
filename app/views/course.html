@@ -1,7 +1,7 @@
 <div class="container pad">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="title">{{courses.name}}</h1>
+            <h1 class="title">{(courses.name)}</h1>
         </div>
     </div>
     <div class="row">
@@ -20,12 +20,12 @@
         </div>
         <div class="col-md-8">
             <div class="right-content">
-                <p class="nav-header">{{courses.name}}</p>
+                <p class="nav-header">{(courses.name)}</p>
                 <ul class="nav nav-pills nav-stacked listing">
                     <li ng-repeat="course in courses.courses">
-                        <a href="#{{course.code}}">
-                            <span class="nav-counter pull-right">{{course.tutorials.length}}</span>
-                            {{course.name}}
+                        <a href="#{(course.code)}">
+                            <span class="nav-counter pull-right">{(course.tutorials.length)}</span>
+                            {(course.name)}
                         </a>
                     </li>
                 </ul>
@@ -38,13 +38,13 @@
 <div ng-repeat="course in courses.courses" class="container-fluid"
      ng-class="{'gray-container': $even,
                 'panel-container': $odd}">
-    <a name="{{course.code}}"></a>
+    <a name="{(course.code)}"></a>
         <div class="row">
             <div class="col-md-12">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="sl-title"><span>{{course.id}}</span>{{course.name}}</h1>
+                            <h1 class="sl-title"><span>{(course.id)}</span>{(course.name)}</h1>
                         </div>
                     </div>
                 </div>
@@ -71,11 +71,11 @@
                         </div>
                         <div class="col-md-8">
                             <div class="right-content tutorial-listing">
-                                <p class="nav-header">{{course.name}}</p>
+                                <p class="nav-header">{(course.name)}</p>
                                 <ul class="nav nav-pills nav-stacked listing">
                                     <li ng-repeat="tutorial in course.tutorials">
-                                        <a href="{{tutorial.href}}">
-                                            {{tutorial.id + ". " + tutorial.name}}
+                                        <a href="{(tutorial.href)}">
+                                            {(tutorial.id + ". " + tutorial.name)}
                                         </a>
                                     </li>
                                 </ul>

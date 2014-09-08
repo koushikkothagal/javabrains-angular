@@ -13,9 +13,12 @@ angular
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'ui.ace',
+    'angulartics', 
+    'angulartics.google.analytics'  
   ])
-  .config(function ($routeProvider, $locationProvider) {
+  .config(function ($routeProvider, $locationProvider, $interpolateProvider) {
     $routeProvider
       .when('/', {
         templateUrl: '/views/main.html',
@@ -37,8 +40,13 @@ angular
         templateUrl: '/views/tutorial.html',
         controller: 'TutorialCtrl'
       })
+      .when('/tutorials/:tutName/quiz/:tutTitle.html', {
+        templateUrl: '/views/quiz.html',
+        controller: 'TutorialCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
       $locationProvider.html5Mode(true);
+      $interpolateProvider.startSymbol('{(').endSymbol(')}');
   });

@@ -1,5 +1,6 @@
 
 
+
     
 
     
@@ -32,84 +33,382 @@
 
 
 
+
+
+
     
-  	
     
 
     
-  	
+        
+        
+
+
+
+
+    
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
     
         
             
@@ -118,16 +417,15 @@
             
         
     	
-            
             
                 
             
-            
     	
     
 
+                                     
 <header class="text-center">
-    <div>
+    <div style="max-width:30%;margin:auto">
         <span id="topic-link-span" class="dd"><a id="topic-link" href="/javaee.html#javaee_jaxws">SOAP Web Services with JAX-WS</a></span>
     </div>
     <h1 class="video-number">20</h1>
@@ -136,7 +434,7 @@
 
 </header>
 <div class="post-body">
-    <p>In this video, we will switch back to the client side and learn more about wsimport, the tool we used to generate client stubs. </p>
+    <p>In this video, we will switch back to the client side and learn more about wsimport, the tool we used to generate client stubs.</p>
 
 <!--
 <style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
@@ -165,7 +463,7 @@
 
 <div class="outer-container">
 <div class="video-container shadow">
-         <iframe src="http://www.youtube.com/embed/lwXsrcJyjiI" frameborder="0" width="560" height="315"></iframe>
+         <iframe src="http://www.youtube.com/embed/lwXsrcJyjiI" frameborder="0" width="560" height="315" allowfullscreen></iframe>
 </div>
 
 <p></div>    </p>
@@ -187,7 +485,7 @@
 
 <p>I&#39;ll copy the WSDL URL and run <code>wsimport</code>. The tool parses the WSDL and generates all the necessary types. Here it has generated two directories containing classes.</p>
 
-<p>Now, let&#39;s say you save the WSDL file on your hard drive and run wsimport. Do you think that&#39;ll work? I&#39;ll save the WSDL file to the local directory, the same directory that I&#39;m already in. Now I&#39;ll run </p>
+<p>Now, let&#39;s say you save the WSDL file on your hard drive and run wsimport. Do you think that&#39;ll work? I&#39;ll save the WSDL file to the local directory, the same directory that I&#39;m already in. Now I&#39;ll run</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">wsimport productcatalog.wsdl
 </code></pre></div>
 <p>It still works! Why am I mentioning this? The reason is that the WSDL file, the file I&#39;ve saved locally, is only a part of the web service definition. If you remember, the WSDL refers to types, which are in a separate XSD file. I didn&#39;t save those. But <code>wsimport</code> is smart enough to detect that. It starts with your local WSDL file, but looks up any referenced XSD files from their http locations.</p>
@@ -196,50 +494,50 @@
 
 <p>You&#39;ve already seen the following three options.</p>
 
-<p><code>-d directory</code><br>
+<p><code>-d directory</code>
 This lets you specify the directory where you want the generated classes to go.</p>
 
-<p><code>-keep</code><br>
+<p><code>-keep</code>
 Tells <code>wsimport</code> to save the source files. By default, <code>wsimport</code> deletes the <code>.java</code> files after compiling them and retains just the <code>.class</code> files.</p>
 
-<p><code>-s directory</code><br>
+<p><code>-s directory</code>
 This tells wsimport where to put the source <code>.java</code> files. As you can imagine, using this turns on the <code>-keep</code> flag automatically.</p>
 
 <p>Also, a couple of obvious ones:</p>
 
-<p><code>-verbose</code><br>
-Makes the tool give more detailed output<br>
-and<br>
-<code>-quiet</code><br>
+<p><code>-verbose</code>
+Makes the tool give more detailed output
+and
+<code>-quiet</code>
 gives out little output. These two do not affect the output classes themselves.</p>
 
-<p>Now, let&#39;s look at a couple of options that do affect the output classes. </p>
+<p>Now, let&#39;s look at a couple of options that do affect the output classes.</p>
 
-<p><code>-p packageName</code><br>
+<p><code>-p packageName</code>
 Look at the output classes. They are in the package <code>org.koushik.javabrains</code> because that is the package I wrote the web services in. Of course, I did some overrides and they have gone into the <code>com.testmart</code> package.  Basically, that&#39;s the package that the web service belongs to, and that was automatically picked up into the WSDL as namespaces. Now <em>that</em> is again automatically picked up as the package names by <code>wsimport</code>. If you need to override this, you can change the package name of the generated classes by using the <code>-p</code> option.</p>
 
 <p>For example, this command forces all generated classes to be in the <code>org.koushik.generated</code> package.</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">wsimport -p org.koushik.generated productcatalog.wsdl
 </code></pre></div>
-<p>Next, let&#39;s look at the <code>-b</code> parameter. </p>
+<p>Next, let&#39;s look at the <code>-b</code> parameter.</p>
 
-<p>Every program that generates Java code carries with it an implicit responsibility. The responsibility that the code it generates has to compile! As we&#39;ve seen, <code>wsimport</code> generates Java code and compiles it. So, can <code>wsimport</code> guarantee that the code it generates will compile fine? </p>
+<p>Every program that generates Java code carries with it an implicit responsibility. The responsibility that the code it generates has to compile! As we&#39;ve seen, <code>wsimport</code> generates Java code and compiles it. So, can <code>wsimport</code> guarantee that the code it generates will compile fine?</p>
 
 <p>Unfortunately, it doesn&#39;t! We&#39;ll take a look at the code <code>wsimport</code> generates later, but as you can imagine, it uses a lot of names like type names and variable names directly from the WSDL. For instance, an XSD type name becomes the corresponding generated class name. Now, in some areas, Java is stricter and XSD is more forgiving. In such cases, we have a problem. Some names that might be valid in XSD might not be valid on the Java side. So when <code>wsimport</code> generates code using those names, the resultant code may not compile!</p>
 
 <p>A common problem is type names. You can have multiple schema types with the same name. But when they are converted to corresponding Java classes with the same name, if they end up being in the same package, the compiler will complain.
-To avoid this problem, you can use what are called <em>binding files</em>. </p>
+To avoid this problem, you can use what are called <em>binding files</em>.</p>
 
 <blockquote>
-<p>Binding files are XML files that let you specify custom overrides to the way code is generated by <code>wsimport</code>. </p>
+<p>Binding files are XML files that let you specify custom overrides to the way code is generated by <code>wsimport</code>.</p>
 </blockquote>
 
-<p>I will not be going into the details of binding files, but I&#39;d encourage you to look them up. You can do  things like configuring a specific XSD type to have a Java class name of your choice instead of the default XSD type name. </p>
+<p>I will not be going into the details of binding files, but I&#39;d encourage you to look them up. You can do  things like configuring a specific XSD type to have a Java class name of your choice instead of the default XSD type name.</p>
 
 <p>You write all these overrides in an xml file and supply that to <code>wsimport</code> with the <code>-b</code> option.</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">wsimport -b binding_file.xml wsdl_file.wsdl
 </code></pre></div>
-<p>There are a lot of customization you can do here. The <code>-p</code> option lets you customize just the package  name, but this <code>-b</code> option lets you customize a whole lot more, and it is very handy when you have troublesome WSDL files that lead to Java classes that don&#39;t compile. </p>
+<p>There are a lot of customization you can do here. The <code>-p</code> option lets you customize just the package  name, but this <code>-b</code> option lets you customize a whole lot more, and it is very handy when you have troublesome WSDL files that lead to Java classes that don&#39;t compile.</p>
 
 <p>In the next tutorial, we&#39;ll look at two options related to the WSDL location that you should definitely know about. They address a specific problem with the way Java client works, and we&#39;ll understand what that is. See you in the next tutorial.</p>
 

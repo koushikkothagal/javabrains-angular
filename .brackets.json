@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/koushik/code/javabrains-angular/bower_components/jquery/src/css/curCSS.js",
+        "/Users/koushik/code/javabrains-angular/node_modules/grunt-contrib-copy/tasks/copy.js",
+        "/Users/koushik/code/javabrains-angular/bower_components/jquery/src/ajax/var/rquery.js",
+        "/Users/koushik/code/javabrains-angular/app/scripts/app.js"
+    ]
+}

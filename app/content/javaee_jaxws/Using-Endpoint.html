@@ -1,5 +1,6 @@
 
 
+
     
 
     
@@ -32,80 +33,94 @@
 
 
 
+
+
+
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
+        
+        
+
+
+
+
+    
     
 
     
-  	
+        
+        
+
+
+
+
+
+    
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
     
         
             
@@ -114,25 +129,20 @@
             
                 
             
-
-
-            
     	
     	
-            
             
                 
             
-            
     	
     
 
     
-  	
     
 
+                                     
 <header class="text-center">
-    <div>
+    <div style="max-width:30%;margin:auto">
         <span id="topic-link-span" class="dd"><a id="topic-link" href="/javaee.html#javaee_jaxws">SOAP Web Services with JAX-WS</a></span>
     </div>
     <h1 class="video-number">19</h1>
@@ -170,7 +180,7 @@
 
 <div class="outer-container">
 <div class="video-container shadow">
-         <iframe src="http://www.youtube.com/embed/ExGgevg3i94" frameborder="0" width="560" height="315"></iframe>
+         <iframe src="http://www.youtube.com/embed/ExGgevg3i94" frameborder="0" width="560" height="315" allowfullscreen></iframe>
 </div>
 
 <p></div>    </p>
@@ -188,7 +198,7 @@
 
 <span class="o">}</span>
 </code></pre></div>
-<p>That&#39;s all it takes to run a web service! The <code>Endpoint.publish()</code> is an overloaded method, but the one we are using here takes two arguments. </p>
+<p>That&#39;s all it takes to run a web service! The <code>Endpoint.publish()</code> is an overloaded method, but the one we are using here takes two arguments.</p>
 
 <p>The first argument is a <code>String</code> where you can specify the URL for your web service. Note that I&#39;m using <code>localhost</code> as the host name since I intend to run this on my computer only. The port can be any arbitrary port that you know is not in use by any other program on your computer. I&#39;m using port <code>1234</code> here. The <code>productcatalog</code> part of the URL can be any arbitrary name that you want the web service to be exposed at.</p>
 
@@ -202,7 +212,7 @@
 
 <p><a href="https://metro.java.net" target="_blank">Metro</a> is a reference implementation of the JAX-WS standard that we&#39;ve been learning so far. The JAX-WS specification tells us how to write web services. It tells us what annotations to use, what conventions to follow and so on. Once you write a web service that follows this specification, you&#39;ll need something to run it!</p>
 
-<p>This is where JAX-WS implementations come in. The implementations pick up any code that is written following the specification, and they actually run them exactly like the specification promises they would.  </p>
+<p>This is where JAX-WS implementations come in. The implementations pick up any code that is written following the specification, and they actually run them exactly like the specification promises they would.</p>
 
 <p>Metro is bundled with Glassfish. When a web service application is deployed in Glassfish, it is actually Metro doing all the work behind the scenes. Interestingly, Metro is also bundled with the JDK, which is why we could run a web service using just the <code>Endpoint</code> class in the JDK, without using any app servers.</p>
 

@@ -1,5 +1,6 @@
 
 
+
     
 
     
@@ -32,80 +33,379 @@
 
 
 
+
+
+
     
-  	
     
 
     
-  	
+        
+        
+
+
+
+
+    
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
     
 
     
-  	
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
     
         
             
@@ -114,16 +414,15 @@
             
         
     	
-            
             
                 
             
-            
     	
     
 
+                                     
 <header class="text-center">
-    <div>
+    <div style="max-width:30%;margin:auto">
         <span id="topic-link-span" class="dd"><a id="topic-link" href="/struts2.html#struts2_intro">Beginning Struts 2</a></span>
     </div>
     <h1 class="video-number">19</h1>
@@ -161,7 +460,7 @@
 
 <div class="outer-container">
 <div class="video-container shadow">
-         <iframe src="http://www.youtube.com/embed/qefvF2Y0A8Y" frameborder="0" width="560" height="315"></iframe>
+         <iframe src="http://www.youtube.com/embed/qefvF2Y0A8Y" frameborder="0" width="560" height="315" allowfullscreen></iframe>
 </div>
 
 <p></div>    </p>
@@ -170,18 +469,19 @@
 
 <p>Notes</p>
 
-<ul>
+<ol>
 <li>Interceptors typically contain pre- and post-processing logic.</li>
 <li>An ActionInvocation object manages the overall flow of control.</li>
 <li>Every interceptor has a method called intercept() that contains the necessary logic.</li>
 <li>The interceptor calls the invoke() method of the ActionInvocation object to continue further processing.</li>
-</ul>
+</ol>
 
 <p>Interceptors can execute code before and after an Action is invoked. And since they can be configured in any order for any Action, it&#39;s not possible for the interceptor to figure out where the flow of control needs to go next.</p>
 
 <p>The way Struts 2 manages the flow of control is by giving the responsibility to a separate framework class called the ActionInvocation.</p>
 
 <p>Here is a short snippet of the ActionInvocation interface. Read through the Java docs. Most of it should now make sense.</p>
+
 <div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">opensymphony</span><span class="o">.</span><span class="na">xwork2</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">ActionInvocation</span> <span class="kd">extends</span> <span class="n">Serializable</span> <span class="o">{</span>
@@ -202,9 +502,9 @@
 
 <span class="o">...</span>
 
-<span class="o">}</span>
-</code></pre></div>
-<p>The ActionInvocation contains a method called invoke() that the framework uses to kickstart the flow. Once the method starts, </p>
+<span class="o">}</span></code></pre></div>
+
+<p>The ActionInvocation contains a method called invoke() that the framework uses to kickstart the flow. Once the method starts,</p>
 
 <ol>
 <li>ActionInvocation invoke() refers to the configuration to identify what interceptors need to run and calls the intercept() method of the first interceptor.</li>

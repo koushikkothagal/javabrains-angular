@@ -1,167 +1,18 @@
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.7007f404.css">  <body ng-app="jb3App" ng-cloak> <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <global-menu open="menuOpen"></global-menu> <div id="page" class="container-fluid pad" ng-class="{'c-overlay-open': menuOpen}"> <div class="menu-links"> <a class="hand-pointer pad" href="/" type="button"> <img id="trigger-overlay" src="/images/logo.68a1f4a6.png" width="110px" alt="Java Brains"> </a> <a id="menu-logo" class="hand-pointer pull-right pad" ng-click="menuOpen=true" type="button"> <img id="trigger-overlay" width="40px" src="/images/menu.7e146029.png" alt="Menu"> </a> </div> <div ui-view ng-view=""></div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-
-    
-        
-        
-        
-        
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-
-
-    
-  	
-    
-
-    
-  	
-    
-
-    
-  	
-    
-
-    
-  	
-    
-        
-                
-        
-        
-            
-                
-            
-
-
-            
-    	
-    	
-            
-            
-                
-            
-            
-    	
-    
-
-    
-  	
-    
-
-    
-  	
-    
-
-    
-  	
-    
-
-    
-  	
-    
-
-    
-  	
-    
-
-    
-  	
-    
-
-<header class="text-center">
-    <div>
-        <span id="topic-link-span" class="dd"><a id="topic-link" href="/servlets.html#servlets_intro">Introduction to Servlets</a></span>
-    </div>
-    <h1 class="video-number">04</h1>
-
-    <h1 id="tut-title"  class="no-margin">Understanding the Servlet</h1>
-
-</header>
-<div class="post-body">
-    <p>In this tutorial, we&#39;ll understand how our servlet intercepts HTTP requests, and the methods it runs.</p>
-
-<!--
-<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
-<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/YxuCG0f14hM?rel=0"></iframe></div>
--->
-
-<style>
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-    
-}
- 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-</style>
-
-<div class="outer-container">
-<div class="video-container shadow">
-         <iframe src="http://www.youtube.com/embed/YxuCG0f14hM" frameborder="0" width="560" height="315"></iframe>
-</div>
-
-<p></div>    </p>
-
-</div>
-
-<div id="prevnext">
-<nav class="nav-growpop">
-    
-        <a class="prev" href="/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-02---First-Servlet-Part-2.html">
-            <span class="icon-wrap fa fa-arrow-left"></span>
-            <div>
-                <span>Previous</span>
-                <p> 03  </p>
-                <h3>First Servlet Part 2</h3>
-
-
-            </div>
-        </a>
-    
-     
-        <a class="next" href="/tutorials/servlets_intro/JSPs-and-Servlets-Tutorial-04---Servlet-XML-Configuration.html">
-            <span class="icon-wrap fa fa-arrow-right"></span>
-            <div>
-                <span>Next</span>
-                <p> 05  </p>
-                <h3>Servlet XML Configuration</h3>
-
-
-            </div>
-        </a>
-    
-    </nav>
-</div>
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');</script> <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.ff90b0fb.js"></script>
+    <![endif]--> <script src="scripts/vendor.7d9cade9.js"></script> <script src="scripts/ace.bfe78535.js"></script> <script src="scripts/scripts.d53f7a18.js"></script>  

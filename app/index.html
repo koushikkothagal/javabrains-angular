@@ -97,7 +97,16 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <!-- build:js({.tmp,app}) scripts/ace.js -->
+    <script src="/scripts/ace.js"></script>
+    <script src="/scripts/ui-ace.js"></script>
+    <script src="/scripts/theme-xcode.js"></script>
+    <script src="/scripts/mode-java.js"></script>
+    <script src="/scripts/mode-xml.js"></script>
+    <!-- endbuild -->
+    
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/main.js"></script>
     <script src="/scripts/controllers/about.js"></script>
@@ -107,6 +116,14 @@
 
     <script src="/scripts/directives/globalmenu.js"></script>
     <script src="/scripts/services/coursedatasvc.js"></script>
+    
+    <script src="/scripts/strip-comments.js"></script>
+    
+    <script src="scripts/services/dataservice.js"></script>
+    <script src="scripts/services/codeservice.js"></script>
+    <script src="scripts/controllers/quiz.js"></script>
+    <script src="scripts/angulartics.min.js"></script>
+    <script src="scripts/angulartics-ga.min.js"></script>
     <!-- endbuild -->
 </body>
 

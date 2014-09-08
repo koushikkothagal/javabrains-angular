@@ -1,6 +1,8 @@
 #global-menu {
     height: 100%;
     .list-group-item {
+        /*background-color: transparent;
+        border: none;*/
         padding: 5%;
         cursor: pointer;
         @include bp(mama-bear) {
